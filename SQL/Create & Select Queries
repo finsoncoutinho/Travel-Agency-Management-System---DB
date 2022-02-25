@@ -1,0 +1,15 @@
+//TABLE:BUS
+create table BUS( travel_id int primary key, BusNo varchar(20),Departure varchar(20),Arrival varchar(20),TravelDate varchar(20), Price int,TotalSeats int, BookedSeats int, AvailableSeats int); insert into BUS values(104,’GA423','Goa','Mumbai','12/08/2022',100,40,10,30);
+Select * from BUS;
+
+//TABLE:consumer
+create table consumer(Firstname varchar2(20), Lastname varchar2(20),Phonenumber varchar2(20),Email varchar2(20) primary key,Password varchar2(20), gender varchar2(5));
+Select * from consumer;
+
+//TABLE:admin
+create table admin(Email varchar(20), Password varchar(20)); 
+Select * from admin;
+
+//TABLE:booking
+create table booking(Email varchar(20) primary key, travel_id int, Qseats int, Price int, TotalPrice int); 
+Select * from booking;
